@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE1F093124995C0D00CA1D4F /* CNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F093024995C0D00CA1D4F /* CNavigationView.swift */; };
 		DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236524992F0500DF24CC /* AppDelegate.swift */; };
 		DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236724992F0500DF24CC /* SceneDelegate.swift */; };
 		DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236924992F0500DF24CC /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE1F093024995C0D00CA1D4F /* CNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNavigationView.swift; sourceTree = "<group>"; };
 		DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Custon-Nav-An-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9A236524992F0500DF24CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9A236724992F0500DF24CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE1F092F24995BD500CA1D4F /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F093024995C0D00CA1D4F /* CNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		DE9A235924992F0500DF24CC = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		DE9A236424992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api */ = {
 			isa = PBXGroup;
 			children = (
+				DE1F092F24995BD500CA1D4F /* Navigation */,
 				DE9A236524992F0500DF24CC /* AppDelegate.swift */,
 				DE9A236724992F0500DF24CC /* SceneDelegate.swift */,
 				DE9A236924992F0500DF24CC /* ContentView.swift */,
@@ -210,6 +221,7 @@
 			files = (
 				DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */,
 				DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */,
+				DE1F093124995C0D00CA1D4F /* CNavigationView.swift in Sources */,
 				DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

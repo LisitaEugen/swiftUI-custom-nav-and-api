@@ -10,9 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        CNavigationView {
+            NumberedScreen(number: 0)
+        }
     }
 }
+
+struct NumberedScreen: View {
+    var number: Int
+    
+    var body: some View {
+        VStack {
+            Spacer()
+            Text("\(number) Screen")
+            Spacer()
+            NavPushButton(destination: NumberedScreen(number: number + 1)) {
+                Text("Navigate to the next screen ->")
+            }
+            Spacer()
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
