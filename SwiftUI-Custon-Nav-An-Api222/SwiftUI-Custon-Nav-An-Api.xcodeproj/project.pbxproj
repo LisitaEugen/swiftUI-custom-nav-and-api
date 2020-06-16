@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236524992F0500DF24CC /* AppDelegate.swift */; };
+		DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236724992F0500DF24CC /* SceneDelegate.swift */; };
+		DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236924992F0500DF24CC /* ContentView.swift */; };
+		DE9A236C24992F0900DF24CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9A236B24992F0900DF24CC /* Assets.xcassets */; };
+		DE9A236F24992F0900DF24CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9A236E24992F0900DF24CC /* Preview Assets.xcassets */; };
+		DE9A237224992F0900DF24CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9A237024992F0900DF24CC /* LaunchScreen.storyboard */; };
+		DE9A237D24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A237C24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE9A237924992F0900DF24CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE9A235A24992F0500DF24CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE9A236124992F0500DF24CC;
+			remoteInfo = "SwiftUI-Custon-Nav-An-Api";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Custon-Nav-An-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9A236524992F0500DF24CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE9A236724992F0500DF24CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE9A236924992F0500DF24CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE9A236B24992F0900DF24CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE9A236E24992F0900DF24CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE9A237124992F0900DF24CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE9A237324992F0900DF24CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE9A237824992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-Custon-Nav-An-ApiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9A237C24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Custon_Nav_An_ApiTests.swift; sourceTree = "<group>"; };
+		DE9A237E24992F0900DF24CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE9A235F24992F0500DF24CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9A237524992F0900DF24CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE9A235924992F0500DF24CC = {
+			isa = PBXGroup;
+			children = (
+				DE9A236424992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api */,
+				DE9A237B24992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests */,
+				DE9A236324992F0500DF24CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE9A236324992F0500DF24CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */,
+				DE9A237824992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE9A236424992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A236524992F0500DF24CC /* AppDelegate.swift */,
+				DE9A236724992F0500DF24CC /* SceneDelegate.swift */,
+				DE9A236924992F0500DF24CC /* ContentView.swift */,
+				DE9A236B24992F0900DF24CC /* Assets.xcassets */,
+				DE9A237024992F0900DF24CC /* LaunchScreen.storyboard */,
+				DE9A237324992F0900DF24CC /* Info.plist */,
+				DE9A236D24992F0900DF24CC /* Preview Content */,
+			);
+			path = "SwiftUI-Custon-Nav-An-Api";
+			sourceTree = "<group>";
+		};
+		DE9A236D24992F0900DF24CC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A236E24992F0900DF24CC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE9A237B24992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A237C24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift */,
+				DE9A237E24992F0900DF24CC /* Info.plist */,
+			);
+			path = "SwiftUI-Custon-Nav-An-ApiTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE9A236124992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE9A238124992F0900DF24CC /* Build configuration list for PBXNativeTarget "SwiftUI-Custon-Nav-An-Api" */;
+			buildPhases = (
+				DE9A235E24992F0500DF24CC /* Sources */,
+				DE9A235F24992F0500DF24CC /* Frameworks */,
+				DE9A236024992F0500DF24CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-Custon-Nav-An-Api";
+			productName = "SwiftUI-Custon-Nav-An-Api";
+			productReference = DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE9A237724992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE9A238424992F0900DF24CC /* Build configuration list for PBXNativeTarget "SwiftUI-Custon-Nav-An-ApiTests" */;
+			buildPhases = (
+				DE9A237424992F0900DF24CC /* Sources */,
+				DE9A237524992F0900DF24CC /* Frameworks */,
+				DE9A237624992F0900DF24CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE9A237A24992F0900DF24CC /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-Custon-Nav-An-ApiTests";
+			productName = "SwiftUI-Custon-Nav-An-ApiTests";
+			productReference = DE9A237824992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE9A235A24992F0500DF24CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Evgheni Lisita";
+				TargetAttributes = {
+					DE9A236124992F0500DF24CC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					DE9A237724992F0900DF24CC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = DE9A236124992F0500DF24CC;
+					};
+				};
+			};
+			buildConfigurationList = DE9A235D24992F0500DF24CC /* Build configuration list for PBXProject "SwiftUI-Custon-Nav-An-Api" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE9A235924992F0500DF24CC;
+			productRefGroup = DE9A236324992F0500DF24CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE9A236124992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api */,
+				DE9A237724992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE9A236024992F0500DF24CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9A237224992F0900DF24CC /* LaunchScreen.storyboard in Resources */,
+				DE9A236F24992F0900DF24CC /* Preview Assets.xcassets in Resources */,
+				DE9A236C24992F0900DF24CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9A237624992F0900DF24CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE9A235E24992F0500DF24CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */,
+				DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */,
+				DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9A237424992F0900DF24CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9A237D24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE9A237A24992F0900DF24CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE9A236124992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api */;
+			targetProxy = DE9A237924992F0900DF24CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE9A237024992F0900DF24CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE9A237124992F0900DF24CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE9A237F24992F0900DF24CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE9A238024992F0900DF24CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE9A238224992F0900DF24CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Custon-Nav-An-Api/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Custon-Nav-An-Api/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fox.SwiftUI-Custon-Nav-An-Api";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE9A238324992F0900DF24CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Custon-Nav-An-Api/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Custon-Nav-An-Api/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fox.SwiftUI-Custon-Nav-An-Api";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE9A238524992F0900DF24CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				INFOPLIST_FILE = "SwiftUI-Custon-Nav-An-ApiTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fox.SwiftUI-Custon-Nav-An-ApiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-Custon-Nav-An-Api.app/SwiftUI-Custon-Nav-An-Api";
+			};
+			name = Debug;
+		};
+		DE9A238624992F0900DF24CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F6Z4VKPC5;
+				INFOPLIST_FILE = "SwiftUI-Custon-Nav-An-ApiTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fox.SwiftUI-Custon-Nav-An-ApiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-Custon-Nav-An-Api.app/SwiftUI-Custon-Nav-An-Api";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE9A235D24992F0500DF24CC /* Build configuration list for PBXProject "SwiftUI-Custon-Nav-An-Api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9A237F24992F0900DF24CC /* Debug */,
+				DE9A238024992F0900DF24CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE9A238124992F0900DF24CC /* Build configuration list for PBXNativeTarget "SwiftUI-Custon-Nav-An-Api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9A238224992F0900DF24CC /* Debug */,
+				DE9A238324992F0900DF24CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE9A238424992F0900DF24CC /* Build configuration list for PBXNativeTarget "SwiftUI-Custon-Nav-An-ApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9A238524992F0900DF24CC /* Debug */,
+				DE9A238624992F0900DF24CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE9A235A24992F0500DF24CC /* Project object */;
+}
