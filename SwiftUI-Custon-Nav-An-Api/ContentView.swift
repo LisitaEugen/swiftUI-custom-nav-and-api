@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        CNavigationView {
+        CNavigationView(transition: .custom(.slide)) {
             NumberedScreen(number: 0)
         }
     }
@@ -26,6 +26,14 @@ struct NumberedScreen: View {
             Spacer()
             NavPushButton(destination: NumberedScreen(number: number + 1)) {
                 Text("Navigate to the next screen ->")
+            }
+            Spacer()
+            NavPopButton {
+                Text("Navigate back")
+            }
+            Spacer()
+            NavPopButton(destination: .root) {
+                Text("Navigate back")
             }
             Spacer()
         }

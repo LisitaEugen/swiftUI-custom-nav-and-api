@@ -9,32 +9,66 @@
 import SwiftUI
 import Combine
 
+extension AnyTransition {
+    
+    static var moveAndFade: AnyTransition {
+        let insertion = AnyTransition.move(edge: .leading).combined(with: .opacity)
+        let removal = AnyTransition.scale.combined(with: .opacity)
+        return .asymmetric(insertion: insertion, removal: removal)
+    }
+    
+}
+
 struct CNavigationView<Content>: View where Content: View {
     
     @ObservedObject private var viewModel: CNavigationViewModel
     
     private let content: Content
-//    private let transition: Content
+    private let transition: (push: AnyTransition, pop: AnyTransition)
     
-    init(@ViewBuilder content: @escaping () -> Content) {
+    init(transition: NavTransiton, @ViewBuilder content: @escaping () -> Content) {
         self.viewModel = CNavigationViewModel()
         self.content = content()
+        
+        switch transition {
+        case .custom(let transition):
+            self.transition = (transition, transition)
+        case .none:
+            self.transition = (.identity, .identity)
+        }
     }
     
     var body: some View {
         let isRoot = viewModel.currentScreen == nil
         return ZStack {
                     if isRoot {
-                        content.environmentObject(viewModel)
+                        content
+                            .environmentObject(viewModel)
+                            .transition(viewModel.navigationType == .push ? transition.push : transition.pop)
                     } else {
-                        viewModel.currentScreen!.nextScreen.environmentObject(viewModel)
+                        viewModel.currentScreen!.nextScreen
+                            .environmentObject(viewModel)
+                            .transition(viewModel.navigationType == .push ? transition.push : transition.pop)
                     }
                 }
     }
 }
 
+enum NavTransiton {
+    case none
+    case custom(AnyTransition)
+}
+
+
+enum NavType {
+    case push
+    case pop
+}
+
 final class CNavigationViewModel: ObservableObject {
-    fileprivate var currentScreen: Screen?
+    @Published fileprivate var currentScreen: Screen?
+    
+    var navigationType = NavType.push
     
     private var screenStack = ScreenStack() {
         didSet {
@@ -43,16 +77,22 @@ final class CNavigationViewModel: ObservableObject {
     }
     
     func push<S: View>(_ screenView: S) {
-        let screen = Screen(id: UUID().uuidString, nextScreen: AnyView(screenView))
-        screenStack.push(screen)
+        withAnimation(.easeOut(duration: 0.33)) {
+            navigationType = .push
+            let screen = Screen(id: UUID().uuidString, nextScreen: AnyView(screenView))
+            screenStack.push(screen)
+        }
     }
     
     func pop(to: PopDestination = .previous) {
-        switch to {
-        case .previous:
-            screenStack.pop()
-        case .root:
-            screenStack.popToRoot()
+        withAnimation(.easeOut(duration: 0.33)) {
+            navigationType = .pop
+            switch to {
+            case .previous:
+                screenStack.pop()
+            case .root:
+                screenStack.popToRoot()
+            }
         }
     }
 }
@@ -118,7 +158,7 @@ struct NavPopButton<Label>: View where Label: View {
     private let destination: PopDestination
     private let label: Label
     
-    init(destination: PopDestination, @ViewBuilder label: () -> Label) {
+    init(destination: PopDestination = .previous, @ViewBuilder label: () -> Label) {
         self.destination = destination
         self.label = label()
     }
