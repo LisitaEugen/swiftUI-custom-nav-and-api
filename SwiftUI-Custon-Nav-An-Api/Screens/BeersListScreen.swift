@@ -10,7 +10,9 @@ import SwiftUI
 
 struct BeersListScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(1...20, id: \.self) { number in
+            Text("Number \(number)")
+        }
     }
 }
 

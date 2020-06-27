@@ -29,6 +29,7 @@
 		DEC82DE424A785C800C9C874 /* OpenISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */; };
 		DEC82DE524A785C800C9C874 /* URLSessionImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */; };
 		DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DE624A7864500C9C874 /* BeersListScreen.swift */; };
+		DEC82DEA24A7889400C9C874 /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DE924A7889400C9C874 /* BeersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenISO8601DateFormatter.swift; sourceTree = "<group>"; };
 		DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionImplementations.swift; sourceTree = "<group>"; };
 		DEC82DE624A7864500C9C874 /* BeersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersListScreen.swift; sourceTree = "<group>"; };
+		DEC82DE924A7889400C9C874 /* BeersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +121,11 @@
 			children = (
 				DEC82DC924A7859F00C9C874 /* PunkAPI */,
 				DE1F092F24995BD500CA1D4F /* Navigation */,
+				DEC82DE824A7866D00C9C874 /* Screens */,
 				DE9A236524992F0500DF24CC /* AppDelegate.swift */,
 				DE9A236724992F0500DF24CC /* SceneDelegate.swift */,
 				DE9A236924992F0500DF24CC /* ContentView.swift */,
-				DEC82DE624A7864500C9C874 /* BeersListScreen.swift */,
+				DEC82DE924A7889400C9C874 /* BeersViewModel.swift */,
 				DE9A236B24992F0900DF24CC /* Assets.xcassets */,
 				DE9A237024992F0900DF24CC /* LaunchScreen.storyboard */,
 				DE9A237324992F0900DF24CC /* Info.plist */,
@@ -182,6 +185,14 @@
 				DEC82DD024A785C700C9C874 /* BeersAPI.swift */,
 			);
 			path = APIs;
+			sourceTree = "<group>";
+		};
+		DEC82DE824A7866D00C9C874 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DEC82DE624A7864500C9C874 /* BeersListScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 				DE1F093124995C0D00CA1D4F /* CNavigationView.swift in Sources */,
 				DEC82DDA24A785C800C9C874 /* APIs.swift in Sources */,
 				DEC82DDB24A785C800C9C874 /* JSONDataEncoding.swift in Sources */,
+				DEC82DEA24A7889400C9C874 /* BeersViewModel.swift in Sources */,
 				DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
