@@ -15,6 +15,20 @@
 		DE9A236F24992F0900DF24CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9A236E24992F0900DF24CC /* Preview Assets.xcassets */; };
 		DE9A237224992F0900DF24CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9A237024992F0900DF24CC /* LaunchScreen.storyboard */; };
 		DE9A237D24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A237C24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift */; };
+		DEC82DD924A785C800C9C874 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DCA24A785C700C9C874 /* Extensions.swift */; };
+		DEC82DDA24A785C800C9C874 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DCB24A785C700C9C874 /* APIs.swift */; };
+		DEC82DDB24A785C800C9C874 /* JSONDataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DCC24A785C700C9C874 /* JSONDataEncoding.swift */; };
+		DEC82DDC24A785C800C9C874 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DCE24A785C700C9C874 /* Beer.swift */; };
+		DEC82DDD24A785C800C9C874 /* BeersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD024A785C700C9C874 /* BeersAPI.swift */; };
+		DEC82DDE24A785C800C9C874 /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD124A785C700C9C874 /* SynchronizedDictionary.swift */; };
+		DEC82DDF24A785C800C9C874 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD224A785C700C9C874 /* Models.swift */; };
+		DEC82DE024A785C800C9C874 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD324A785C700C9C874 /* CodableHelper.swift */; };
+		DEC82DE124A785C800C9C874 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD424A785C700C9C874 /* JSONEncodingHelper.swift */; };
+		DEC82DE224A785C800C9C874 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD524A785C700C9C874 /* Configuration.swift */; };
+		DEC82DE324A785C800C9C874 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD624A785C700C9C874 /* APIHelper.swift */; };
+		DEC82DE424A785C800C9C874 /* OpenISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */; };
+		DEC82DE524A785C800C9C874 /* URLSessionImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */; };
+		DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DE624A7864500C9C874 /* BeersListScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,20 @@
 		DE9A237824992F0900DF24CC /* SwiftUI-Custon-Nav-An-ApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-Custon-Nav-An-ApiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9A237C24992F0900DF24CC /* SwiftUI_Custon_Nav_An_ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Custon_Nav_An_ApiTests.swift; sourceTree = "<group>"; };
 		DE9A237E24992F0900DF24CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC82DCA24A785C700C9C874 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DEC82DCB24A785C700C9C874 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		DEC82DCC24A785C700C9C874 /* JSONDataEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataEncoding.swift; sourceTree = "<group>"; };
+		DEC82DCE24A785C700C9C874 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		DEC82DD024A785C700C9C874 /* BeersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersAPI.swift; sourceTree = "<group>"; };
+		DEC82DD124A785C700C9C874 /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedDictionary.swift; sourceTree = "<group>"; };
+		DEC82DD224A785C700C9C874 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DEC82DD324A785C700C9C874 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		DEC82DD424A785C700C9C874 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		DEC82DD524A785C700C9C874 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		DEC82DD624A785C700C9C874 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionImplementations.swift; sourceTree = "<group>"; };
+		DEC82DE624A7864500C9C874 /* BeersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersListScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +117,12 @@
 		DE9A236424992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api */ = {
 			isa = PBXGroup;
 			children = (
+				DEC82DC924A7859F00C9C874 /* PunkAPI */,
 				DE1F092F24995BD500CA1D4F /* Navigation */,
 				DE9A236524992F0500DF24CC /* AppDelegate.swift */,
 				DE9A236724992F0500DF24CC /* SceneDelegate.swift */,
 				DE9A236924992F0500DF24CC /* ContentView.swift */,
+				DEC82DE624A7864500C9C874 /* BeersListScreen.swift */,
 				DE9A236B24992F0900DF24CC /* Assets.xcassets */,
 				DE9A237024992F0900DF24CC /* LaunchScreen.storyboard */,
 				DE9A237324992F0900DF24CC /* Info.plist */,
@@ -116,6 +146,42 @@
 				DE9A237E24992F0900DF24CC /* Info.plist */,
 			);
 			path = "SwiftUI-Custon-Nav-An-ApiTests";
+			sourceTree = "<group>";
+		};
+		DEC82DC924A7859F00C9C874 /* PunkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				DEC82DD624A785C700C9C874 /* APIHelper.swift */,
+				DEC82DCF24A785C700C9C874 /* APIs */,
+				DEC82DCB24A785C700C9C874 /* APIs.swift */,
+				DEC82DD324A785C700C9C874 /* CodableHelper.swift */,
+				DEC82DD524A785C700C9C874 /* Configuration.swift */,
+				DEC82DCA24A785C700C9C874 /* Extensions.swift */,
+				DEC82DCC24A785C700C9C874 /* JSONDataEncoding.swift */,
+				DEC82DD424A785C700C9C874 /* JSONEncodingHelper.swift */,
+				DEC82DCD24A785C700C9C874 /* Models */,
+				DEC82DD224A785C700C9C874 /* Models.swift */,
+				DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */,
+				DEC82DD124A785C700C9C874 /* SynchronizedDictionary.swift */,
+				DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */,
+			);
+			path = PunkAPI;
+			sourceTree = "<group>";
+		};
+		DEC82DCD24A785C700C9C874 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEC82DCE24A785C700C9C874 /* Beer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEC82DCF24A785C700C9C874 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				DEC82DD024A785C700C9C874 /* BeersAPI.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +285,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC82DDF24A785C800C9C874 /* Models.swift in Sources */,
+				DEC82DE124A785C800C9C874 /* JSONEncodingHelper.swift in Sources */,
+				DEC82DE224A785C800C9C874 /* Configuration.swift in Sources */,
+				DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */,
+				DEC82DE324A785C800C9C874 /* APIHelper.swift in Sources */,
+				DEC82DD924A785C800C9C874 /* Extensions.swift in Sources */,
 				DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */,
+				DEC82DDD24A785C800C9C874 /* BeersAPI.swift in Sources */,
+				DEC82DE424A785C800C9C874 /* OpenISO8601DateFormatter.swift in Sources */,
+				DEC82DE024A785C800C9C874 /* CodableHelper.swift in Sources */,
+				DEC82DE524A785C800C9C874 /* URLSessionImplementations.swift in Sources */,
 				DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */,
+				DEC82DDC24A785C800C9C874 /* Beer.swift in Sources */,
+				DEC82DDE24A785C800C9C874 /* SynchronizedDictionary.swift in Sources */,
 				DE1F093124995C0D00CA1D4F /* CNavigationView.swift in Sources */,
+				DEC82DDA24A785C800C9C874 /* APIs.swift in Sources */,
+				DEC82DDB24A785C800C9C874 /* JSONDataEncoding.swift in Sources */,
 				DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
