@@ -82,8 +82,8 @@ open class BeersAPI {
         
         var url = URLComponents(string: URLString)
         url?.queryItems = APIHelper.mapValuesToQueryItems([
-            "page": page?.encodeToJSON(), 
-            "per_page": perPage?.encodeToJSON()
+            "page": 1, //page?.encodeToJSON(),
+            "per_page": 20 //perPage?.encodeToJSON()
         ])
 
         let requestBuilder: RequestBuilder<[Beer]>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
