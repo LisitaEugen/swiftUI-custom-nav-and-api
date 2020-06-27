@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         CNavigationView(transition: .custom(.slide)) {
-            NumberedScreen(number: 0)
+            FirstScreen()
         }
     }
 }
@@ -75,33 +75,6 @@ struct ThirdScreen: View {
     }
     
 }
-
-struct NumberedScreen: View {
-    var number: Int
-    
-    var body: some View {
-        VStack {
-            Spacer()
-            Text("\(number) Screen")
-                .background(Color.yellow)
-            Spacer()
-            NavPushButton(destination: NumberedScreen(number: number + 1)) {
-                Text("Navigate to the next screen ->")
-            }
-            Spacer()
-            NavPopButton {
-                Text("Navigate back")
-            }
-            Spacer()
-            NavPopButton(destination: .root) {
-                Text("Navigate to root")
-            }
-            Spacer()
-        }
-        .background(Color.green)
-    }
-}
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

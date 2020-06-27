@@ -42,12 +42,10 @@ struct CNavigationView<Content>: View where Content: View {
         return ZStack {
             if isRoot {
                 content
-                    .zIndex(0)
                     .environmentObject(viewModel)
                     .transition(viewModel.navigationType == .push ? transition.push : transition.pop)
             } else {
                 viewModel.currentScreen!.nextScreen
-                    .zIndex(viewModel.currentScreen!.zIndex)
                     .environmentObject(viewModel)
                     .transition(viewModel.navigationType == .push ? transition.push : transition.pop)
             }
@@ -115,14 +113,9 @@ private struct Screen: Identifiable, Equatable {
     
     let id: String
     let nextScreen: AnyView
-    var zIndex: Double = 0
     
     static func == (lhs: Screen, rhs: Screen) -> Bool {
         lhs.id == rhs.id
-    }
-    
-    mutating func setZIndex(_ zIndex: Double) {
-        self.zIndex = zIndex
     }
 }
 
@@ -170,8 +163,7 @@ final class NavControllerViewModel: ObservableObject {
             navigationType = .push
             let screen = Screen(
                 id: UUID().uuidString,
-                nextScreen: AnyView(screenView),
-                zIndex: Double.random(in: 1.0 ..< 100.0)
+                nextScreen: AnyView(screenView)
             )
             screenStack.push(screen)
         }
