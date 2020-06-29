@@ -57,7 +57,7 @@ open class BeersAPI {
      - parameter apiResponseQueue: The queue on which api response is dispatched.
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func beersGet(page: Double? = nil, perPage: Double? = nil, apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, completion: @escaping ((_ data: [Beer]?,_ error: Error?) -> Void)) {
+    open class func beersGet(page: Int? = nil, perPage: Int? = nil, apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, completion: @escaping ((_ data: [Beer]?,_ error: Error?) -> Void)) {
         beersGetWithRequestBuilder(page: page, perPage: perPage).execute(apiResponseQueue) { result -> Void in
             switch result {
             case let .success(response):
@@ -75,15 +75,15 @@ open class BeersAPI {
      - parameter perPage: (query) Number of objects per page (optional)
      - returns: RequestBuilder<[Beer]> 
      */
-    open class func beersGetWithRequestBuilder(page: Double? = nil, perPage: Double? = nil) -> RequestBuilder<[Beer]> {
+    open class func beersGetWithRequestBuilder(page: Int? = nil, perPage: Int? = nil) -> RequestBuilder<[Beer]> {
         let path = "/beers"
         let URLString = OpenAPIClientAPI.basePath + path
         let parameters: [String:Any]? = nil
         
         var url = URLComponents(string: URLString)
         url?.queryItems = APIHelper.mapValuesToQueryItems([
-            "page": 1, //page?.encodeToJSON(),
-            "per_page": 20 //perPage?.encodeToJSON()
+            "page": page?.encodeToJSON(),
+            "per_page": perPage?.encodeToJSON()
         ])
 
         let requestBuilder: RequestBuilder<[Beer]>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()

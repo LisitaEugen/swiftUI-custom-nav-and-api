@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE1069CF24AA45EF003E1226 /* RandomAccessCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1069CE24AA45EF003E1226 /* RandomAccessCollection.swift */; };
 		DE1F093124995C0D00CA1D4F /* CNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F093024995C0D00CA1D4F /* CNavigationView.swift */; };
 		DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236524992F0500DF24CC /* AppDelegate.swift */; };
 		DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236724992F0500DF24CC /* SceneDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE1069CE24AA45EF003E1226 /* RandomAccessCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollection.swift; sourceTree = "<group>"; };
 		DE1F093024995C0D00CA1D4F /* CNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNavigationView.swift; sourceTree = "<group>"; };
 		DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Custon-Nav-An-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9A236524992F0500DF24CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE1069CD24AA45C9003E1226 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE1069CE24AA45EF003E1226 /* RandomAccessCollection.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DE1F092F24995BD500CA1D4F /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 				DE9A236B24992F0900DF24CC /* Assets.xcassets */,
 				DE9A237024992F0900DF24CC /* LaunchScreen.storyboard */,
 				DE9A237324992F0900DF24CC /* Info.plist */,
+				DE1069CD24AA45C9003E1226 /* Extensions */,
 				DE9A236D24992F0900DF24CC /* Preview Content */,
 			);
 			path = "SwiftUI-Custon-Nav-An-Api";
@@ -298,6 +309,7 @@
 			files = (
 				DEC82DDF24A785C800C9C874 /* Models.swift in Sources */,
 				DEC82DE124A785C800C9C874 /* JSONEncodingHelper.swift in Sources */,
+				DE1069CF24AA45EF003E1226 /* RandomAccessCollection.swift in Sources */,
 				DEC82DE224A785C800C9C874 /* Configuration.swift in Sources */,
 				DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */,
 				DEC82DE324A785C800C9C874 /* APIHelper.swift in Sources */,

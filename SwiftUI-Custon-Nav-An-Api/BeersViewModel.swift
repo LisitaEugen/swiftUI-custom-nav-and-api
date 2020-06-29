@@ -24,7 +24,7 @@ class BeersViewModel: ObservableObject {
         page += 1
         isPageLoading = true
         
-        BeersAPI.beersGet(page: Double(page), perPage: Double(20)) { data, error in
+        BeersAPI.beersGet(page: page, perPage: 20) { data, error in
             self.isPageLoading = false
             if let beersList = data {
                 self.beers.append(contentsOf: beersList)
