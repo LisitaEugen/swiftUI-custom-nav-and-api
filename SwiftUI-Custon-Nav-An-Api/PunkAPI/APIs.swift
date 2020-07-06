@@ -7,7 +7,7 @@
 import Foundation
 
 open class OpenAPIClientAPI {
-    public static var basePath = "https://api.punkapi.com/v2/"
+    public static var basePath = "https://virtserver.swaggerhub.com/SMARFOX/PunkAPI/1.0.0"
     public static var credential: URLCredential?
     public static var customHeaders: [String:String] = [:]
     public static var requestBuilderFactory: RequestBuilderFactory = URLSessionRequestBuilderFactory()

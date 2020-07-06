@@ -24,9 +24,16 @@ public struct Beer: Codable {
     public var ebc: Double?
     public var srm: Double?
     public var ph: Double?
-    public var pattenuationLevel: Double?
+    public var attenuationLevel: Double?
+    public var brewersTips: String?
+    public var volume: ValueUnit?
+    public var boilVolume: ValueUnit?
+    public var foodPairing: [String]?
+    public var contributedBy: String?
+    public var method: BeerMethod?
+    public var ingredients: BeerIngredients?
 
-    public init(id: Int64?, name: String?, tagline: String?, firstBrewed: String?, description: String?, imageUrl: String?, abv: Double?, ibu: Double?, targetFg: Double?, targetOg: Double?, ebc: Double?, srm: Double?, ph: Double?, pattenuationLevel: Double?) {
+    public init(id: Int64?, name: String?, tagline: String?, firstBrewed: String?, description: String?, imageUrl: String?, abv: Double?, ibu: Double?, targetFg: Double?, targetOg: Double?, ebc: Double?, srm: Double?, ph: Double?, attenuationLevel: Double?, brewersTips: String?, volume: ValueUnit?, boilVolume: ValueUnit?, foodPairing: [String]?, contributedBy: String?, method: BeerMethod?, ingredients: BeerIngredients?) {
         self.id = id
         self.name = name
         self.tagline = tagline
@@ -40,7 +47,14 @@ public struct Beer: Codable {
         self.ebc = ebc
         self.srm = srm
         self.ph = ph
-        self.pattenuationLevel = pattenuationLevel
+        self.attenuationLevel = attenuationLevel
+        self.brewersTips = brewersTips
+        self.volume = volume
+        self.boilVolume = boilVolume
+        self.foodPairing = foodPairing
+        self.contributedBy = contributedBy
+        self.method = method
+        self.ingredients = ingredients
     }
 
     public enum CodingKeys: String, CodingKey, CaseIterable { 
@@ -57,7 +71,14 @@ public struct Beer: Codable {
         case ebc
         case srm
         case ph
-        case pattenuationLevel = "pattenuation_level"
+        case attenuationLevel = "attenuation_level"
+        case brewersTips = "brewers_tips"
+        case volume
+        case boilVolume = "boil_volume"
+        case foodPairing = "food_pairing"
+        case contributedBy = "contributed_by"
+        case method
+        case ingredients
     }
 
 }
