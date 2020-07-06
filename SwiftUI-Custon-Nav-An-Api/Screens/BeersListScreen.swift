@@ -27,8 +27,7 @@ struct BeersListScreen_List: View {
     
     var body: some View {
         List(self.viewModel.beers) { beer in
-            
-            BeersListScreen_Cell(name: beer.name).onAppear() {
+            BeersListScreen_Cell(beer: beer).onAppear() {
                 if self.viewModel.beers.isLast(beer) {
                     self.viewModel.fetchPage()
                 }
@@ -38,9 +37,11 @@ struct BeersListScreen_List: View {
 }
 
 struct BeersListScreen_Cell: View {
-    var name: String?
+    var beer: Beer?
     var body: some View {
-        Text("\(name ?? "")")
+        NavPushButton(destination: BeerDetailScreen(beer: beer)) {
+            Text("\(self.beer?.name ?? "")")
+        }
     }
 }
 

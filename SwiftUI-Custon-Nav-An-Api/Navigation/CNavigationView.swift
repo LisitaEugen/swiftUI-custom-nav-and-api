@@ -26,7 +26,7 @@ struct CNavigationView<Content>: View where Content: View {
     private let content: Content
     private let transition: (push: AnyTransition, pop: AnyTransition)
     
-    init(transition: NavTransiton, easing: Animation = .easeOut(duration: 2.5), @ViewBuilder content: @escaping () -> Content) {
+    init(transition: NavTransiton = .none, easing: Animation = .easeOut(duration: 0.5), @ViewBuilder content: @escaping () -> Content) {
         self.viewModel = NavControllerViewModel(easing: easing)
         self.content = content()
         switch transition {

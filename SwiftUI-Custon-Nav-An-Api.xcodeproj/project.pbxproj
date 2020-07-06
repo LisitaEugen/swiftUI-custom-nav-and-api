@@ -17,6 +17,7 @@
 		DE662EA724B374CC007FDAAD /* Hope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662E9F24B374CC007FDAAD /* Hope.swift */; };
 		DE662EA824B374CC007FDAAD /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662EA024B374CC007FDAAD /* Beer.swift */; };
 		DE662EA924B374CC007FDAAD /* ValueUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662EA124B374CC007FDAAD /* ValueUnit.swift */; };
+		DE662EAB24B379DE007FDAAD /* BeerDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662EAA24B379DE007FDAAD /* BeerDetailScreen.swift */; };
 		DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236524992F0500DF24CC /* AppDelegate.swift */; };
 		DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236724992F0500DF24CC /* SceneDelegate.swift */; };
 		DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236924992F0500DF24CC /* ContentView.swift */; };
@@ -61,6 +62,7 @@
 		DE662E9F24B374CC007FDAAD /* Hope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hope.swift; sourceTree = "<group>"; };
 		DE662EA024B374CC007FDAAD /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		DE662EA124B374CC007FDAAD /* ValueUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueUnit.swift; sourceTree = "<group>"; };
+		DE662EAA24B379DE007FDAAD /* BeerDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailScreen.swift; sourceTree = "<group>"; };
 		DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Custon-Nav-An-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9A236524992F0500DF24CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9A236724992F0500DF24CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC82DE624A7864500C9C874 /* BeersListScreen.swift */,
+				DE662EAA24B379DE007FDAAD /* BeerDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				DE662EA524B374CC007FDAAD /* Malt.swift in Sources */,
 				DEC82DE224A785C800C9C874 /* Configuration.swift in Sources */,
 				DE662EA824B374CC007FDAAD /* Beer.swift in Sources */,
+				DE662EAB24B379DE007FDAAD /* BeerDetailScreen.swift in Sources */,
 				DE662EA424B374CC007FDAAD /* BeerIngredients.swift in Sources */,
 				DE662EA724B374CC007FDAAD /* Hope.swift in Sources */,
 				DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */,
