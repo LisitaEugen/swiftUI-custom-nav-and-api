@@ -12,30 +12,30 @@ struct BeerDetailScreen: View {
     let beer: Beer?
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             FakeNavBar(label: "\(beer?.name ?? "" )")
-            
-            BeerDetail_GeneralInfo(beer: beer)
-            .padding(.bottom)
-            BeerDetail_Volumes(volume: beer?.volume, boilVolume: beer?.boilVolume)
-            .padding(.bottom)
-            BeerDetail_FoodPairing(foodPairing: beer?.foodPairing ?? [])
-            .padding(.bottom)
-            NavPushButton(destination: BeerMethodScreen(beer: beer)) {
-                Text("Method")
+            VStack(alignment: .leading) {
+                BeerDetail_GeneralInfo(beer: beer)
+                .padding(.bottom)
+                BeerDetail_Volumes(volume: beer?.volume, boilVolume: beer?.boilVolume)
+                .padding(.bottom)
+                BeerDetail_FoodPairing(foodPairing: beer?.foodPairing ?? [])
+                .padding(.bottom)
+                NavPushButton(destination: BeerMethodScreen(beer: beer)) {
+                    Text("Method")
+                        .fontWeight(.bold)
+                }
+                .padding()
+                NavPushButton(destination: BeerIngredientsScreen(beer: beer)) {
+                    Text("Ingredients")
                     .fontWeight(.bold)
+                }
+                .padding()
+                
+                Spacer()
             }
             .padding()
-            NavPushButton(destination: BeerIngredientsScreen(beer: beer)) {
-                Text("Ingredients")
-                .fontWeight(.bold)
-            }
-            .padding()
-            
-            Spacer()
         }
-    .padding()
-        
     }
 }
 

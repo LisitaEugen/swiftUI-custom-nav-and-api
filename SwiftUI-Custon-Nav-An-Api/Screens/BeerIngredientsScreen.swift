@@ -15,7 +15,7 @@ struct BeerIngredientsScreen: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             FakeNavBar(label: "\(beer?.name ?? "" )")
             ScrollView {
                 VStack(alignment: .leading) {
@@ -33,9 +33,9 @@ struct BeerIngredientsScreen: View {
                         }.padding()
                     }
                     Spacer()
-                }
+                }.padding()
             }
-        }.padding()
+        }
     }
 }
 

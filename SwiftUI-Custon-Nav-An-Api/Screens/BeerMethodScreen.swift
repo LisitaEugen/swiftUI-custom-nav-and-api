@@ -15,14 +15,16 @@ struct BeerMethodScreen: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             FakeNavBar(label: "\(beer?.name ?? "" ) Method")
-            Text("Fermentation temp: \(String(method?.fermentation?.temp?.value ?? 0)) \(method?.fermentation?.temp?.unit ?? "")")
-            Text("Twist: \(method?.twist ?? "")")
-            
-            Spacer()
+            VStack(alignment: .leading) {
+                Text("Fermentation temp: \(String(method?.fermentation?.temp?.value ?? 0)) \(method?.fermentation?.temp?.unit ?? "")")
+                Text("Twist: \(method?.twist ?? "")")
+                
+                Spacer()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 struct BeerMethodScreen_Previews: PreviewProvider {

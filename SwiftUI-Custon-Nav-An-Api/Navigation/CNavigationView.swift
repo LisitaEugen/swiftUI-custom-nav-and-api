@@ -13,12 +13,12 @@ extension AnyTransition {
 
     static var moveAndFade: AnyTransition {
         let insertion = AnyTransition.move(edge: .leading).combined(with: .opacity)
-        let removal = AnyTransition.scale.combined(with: .opacity)
+        let removal = AnyTransition.move(edge: .trailing).combined(with: .opacity)
         return .asymmetric(insertion: insertion, removal: removal)
     }
     
     static var fadeAndMove: AnyTransition {
-        let insertion = AnyTransition.scale.combined(with: .opacity)
+        let insertion = AnyTransition.move(edge: .trailing).combined(with: .opacity)
         let removal = AnyTransition.move(edge: .leading).combined(with: .opacity)
         return .asymmetric(insertion: insertion, removal: removal)
     }
@@ -251,7 +251,7 @@ struct FakeNavBar: View {
             }
             .frame(height: UIDevice.current.hasNotch ? 84 : 64)
             .frame(maxWidth: .infinity)
-            .background(Color("BackgroundMain"))
+                .background(Color("BackgroundMain"))
             .compositingGroup()
             .shadow(color: Color("BackgroundMain").opacity(0.2), radius: 0, x: 0, y: 2)
             Text(label)
