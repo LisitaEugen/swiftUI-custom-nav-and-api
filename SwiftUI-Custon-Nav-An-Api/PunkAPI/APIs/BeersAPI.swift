@@ -54,11 +54,14 @@ open class BeersAPI {
      
      - parameter page: (query) Page number (optional)
      - parameter perPage: (query) Number of objects per page (optional)
+     - parameter abvGt: (query) Returns all beers with ABV greater than the supplied number (optional)
+     - parameter ibuGt: (query) Returns all beers with IBU greater than the supplied number (optional)
+     - parameter ebcGt: (query) Returns all beers with EBC greater than the supplied number (optional)
      - parameter apiResponseQueue: The queue on which api response is dispatched.
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func getBeers(page: Int? = nil, perPage: Int? = nil, apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, completion: @escaping ((_ data: [Beer]?,_ error: Error?) -> Void)) {
-        getBeersWithRequestBuilder(page: page, perPage: perPage).execute(apiResponseQueue) { result -> Void in
+    open class func getBeers(page: Int? = nil, perPage: Int? = nil, abvGt: Int? = nil, ibuGt: Int? = nil, ebcGt: Int? = nil, apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, completion: @escaping ((_ data: [Beer]?,_ error: Error?) -> Void)) {
+        getBeersWithRequestBuilder(page: page, perPage: perPage, abvGt: abvGt, ibuGt: ibuGt, ebcGt: ebcGt).execute(apiResponseQueue) { result -> Void in
             switch result {
             case let .success(response):
                 completion(response.body, nil)
@@ -73,9 +76,12 @@ open class BeersAPI {
      - GET /beers
      - parameter page: (query) Page number (optional)
      - parameter perPage: (query) Number of objects per page (optional)
+     - parameter abvGt: (query) Returns all beers with ABV greater than the supplied number (optional)
+     - parameter ibuGt: (query) Returns all beers with IBU greater than the supplied number (optional)
+     - parameter ebcGt: (query) Returns all beers with EBC greater than the supplied number (optional)
      - returns: RequestBuilder<[Beer]> 
      */
-    open class func getBeersWithRequestBuilder(page: Int? = nil, perPage: Int? = nil) -> RequestBuilder<[Beer]> {
+    open class func getBeersWithRequestBuilder(page: Int? = nil, perPage: Int? = nil, abvGt: Int? = nil, ibuGt: Int? = nil, ebcGt: Int? = nil) -> RequestBuilder<[Beer]> {
         let path = "/beers"
         let URLString = OpenAPIClientAPI.basePath + path
         let parameters: [String:Any]? = nil
@@ -83,7 +89,10 @@ open class BeersAPI {
         var url = URLComponents(string: URLString)
         url?.queryItems = APIHelper.mapValuesToQueryItems([
             "page": page?.encodeToJSON(), 
-            "per_page": perPage?.encodeToJSON()
+            "per_page": perPage?.encodeToJSON(), 
+            "abv_gt": abvGt?.encodeToJSON(), 
+            "ibu_gt": ibuGt?.encodeToJSON(), 
+            "ebc_gt": ebcGt?.encodeToJSON()
         ])
 
         let requestBuilder: RequestBuilder<[Beer]>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()

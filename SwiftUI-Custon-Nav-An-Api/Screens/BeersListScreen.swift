@@ -16,22 +16,20 @@ struct BeersListScreen: View {
         VStack {
             BeersListScreen_List()
         }.onAppear() {
-            self.viewModel.fetchPage() // first page
+            self.viewModel.fetchPage()
         }
     }
 }
 
 struct BeersListScreen_List: View {
-    
     @EnvironmentObject var viewModel: BeersViewModel
-    @State private var apiMode: Int = 0
-    
+     
     var body: some View {
         VStack {
-            Picker(selection: $apiMode, label: Text("Choose a beer of your taste")) {
-                Text("ABV > 1").tag(0)
-                Text("IBU > 1").tag(1)
-                Text("EBC > 1").tag(2)
+            Picker(selection: $viewModel.apiMode, label: Text("Choose a beer of your taste")) {
+                Text("ABV > 10").tag(0)
+                Text("IBU > 20").tag(1)
+                Text("EBC > 30").tag(2)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
