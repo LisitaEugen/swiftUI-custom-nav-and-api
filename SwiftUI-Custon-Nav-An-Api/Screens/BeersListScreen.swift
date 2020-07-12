@@ -24,15 +24,26 @@ struct BeersListScreen: View {
 struct BeersListScreen_List: View {
     
     @EnvironmentObject var viewModel: BeersViewModel
+    @State private var apiMode: Int = 0
     
     var body: some View {
-        List(self.viewModel.beers) { beer in
-            BeersListScreen_Cell(beer: beer).onAppear() {
-                if self.viewModel.beers.isLast(beer) {
-                    self.viewModel.fetchPage()
+        VStack {
+            Picker(selection: $apiMode, label: Text("Choose a beer of your taste")) {
+                Text("ABV > 1").tag(0)
+                Text("IBU > 1").tag(1)
+                Text("EBC > 1").tag(2)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
+            List(self.viewModel.beers) { beer in
+                BeersListScreen_Cell(beer: beer).onAppear() {
+                    if self.viewModel.beers.isLast(beer) {
+                        self.viewModel.fetchPage()
+                    }
                 }
             }
         }
+        
     }
 }
 
