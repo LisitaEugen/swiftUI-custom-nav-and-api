@@ -16,11 +16,16 @@ extension AnyTransition {
         let removal = AnyTransition.scale.combined(with: .opacity)
         return .asymmetric(insertion: insertion, removal: removal)
     }
+    
+    static var fadeAndMove: AnyTransition {
+        let insertion = AnyTransition.scale.combined(with: .opacity)
+        let removal = AnyTransition.move(edge: .leading).combined(with: .opacity)
+        return .asymmetric(insertion: insertion, removal: removal)
+    }
 
 }
 
 struct CNavigationView<Content>: View where Content: View {
-    
     @ObservedObject private var viewModel: NavControllerViewModel
     
     private let content: Content
@@ -30,8 +35,8 @@ struct CNavigationView<Content>: View where Content: View {
         self.viewModel = NavControllerViewModel(easing: easing)
         self.content = content()
         switch transition {
-        case .custom(let transition):
-            self.transition = (transition, transition)
+        case .custom(let push, let pop):
+            self.transition = (push, pop)
         case .none:
             self.transition = (.identity, .identity)
         }
@@ -121,7 +126,7 @@ private struct Screen: Identifiable, Equatable {
 
 enum NavTransiton {
     case none
-    case custom(AnyTransition)
+    case custom(AnyTransition, AnyTransition)
 }
 
 enum NavType {
