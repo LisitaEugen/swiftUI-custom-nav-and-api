@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PunkAPI
 
 extension Beer: Identifiable {        
 }

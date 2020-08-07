@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PunkAPI",
+        "repositoryURL": "/Users/evghenilisita/Documents/Projects/iOS/OTUS/swift-punk-api",
+        "state": {
+          "branch": null,
+          "revision": "2c642a449cb3a05c33aa56fa98f872e2fbf71d1c",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

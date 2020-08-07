@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import PunkAPI
 
 struct BeerIngredientsScreen: View {
     let beer: Beer?

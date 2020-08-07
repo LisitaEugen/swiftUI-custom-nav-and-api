@@ -3,20 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DE1069CF24AA45EF003E1226 /* RandomAccessCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1069CE24AA45EF003E1226 /* RandomAccessCollection.swift */; };
 		DE1F093124995C0D00CA1D4F /* CNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F093024995C0D00CA1D4F /* CNavigationView.swift */; };
-		DE662EA224B374CC007FDAAD /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662E9A24B374CC007FDAAD /* Fermentation.swift */; };
-		DE662EA324B374CC007FDAAD /* MashTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662E9B24B374CC007FDAAD /* MashTemp.swift */; };
-		DE662EA424B374CC007FDAAD /* BeerIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662E9C24B374CC007FDAAD /* BeerIngredients.swift */; };
-		DE662EA524B374CC007FDAAD /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662E9D24B374CC007FDAAD /* Malt.swift */; };
-		DE662EA624B374CC007FDAAD /* BeerMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662E9E24B374CC007FDAAD /* BeerMethod.swift */; };
-		DE662EA724B374CC007FDAAD /* Hope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662E9F24B374CC007FDAAD /* Hope.swift */; };
-		DE662EA824B374CC007FDAAD /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662EA024B374CC007FDAAD /* Beer.swift */; };
-		DE662EA924B374CC007FDAAD /* ValueUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662EA124B374CC007FDAAD /* ValueUnit.swift */; };
 		DE662EAB24B379DE007FDAAD /* BeerDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE662EAA24B379DE007FDAAD /* BeerDetailScreen.swift */; };
 		DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236524992F0500DF24CC /* AppDelegate.swift */; };
 		DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A236724992F0500DF24CC /* SceneDelegate.swift */; };
@@ -28,20 +20,9 @@
 		DEA06F6724BB893A00B6A94E /* BeerIngredientsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA06F6624BB893A00B6A94E /* BeerIngredientsScreen.swift */; };
 		DEA06F6924BB894A00B6A94E /* BeerMethodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA06F6824BB894A00B6A94E /* BeerMethodScreen.swift */; };
 		DEA06F6C24BB899C00B6A94E /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA06F6B24BB899C00B6A94E /* DataUtils.swift */; };
-		DEC82DD924A785C800C9C874 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DCA24A785C700C9C874 /* Extensions.swift */; };
-		DEC82DDA24A785C800C9C874 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DCB24A785C700C9C874 /* APIs.swift */; };
-		DEC82DDB24A785C800C9C874 /* JSONDataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DCC24A785C700C9C874 /* JSONDataEncoding.swift */; };
-		DEC82DDD24A785C800C9C874 /* BeersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD024A785C700C9C874 /* BeersAPI.swift */; };
-		DEC82DDE24A785C800C9C874 /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD124A785C700C9C874 /* SynchronizedDictionary.swift */; };
-		DEC82DDF24A785C800C9C874 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD224A785C700C9C874 /* Models.swift */; };
-		DEC82DE024A785C800C9C874 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD324A785C700C9C874 /* CodableHelper.swift */; };
-		DEC82DE124A785C800C9C874 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD424A785C700C9C874 /* JSONEncodingHelper.swift */; };
-		DEC82DE224A785C800C9C874 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD524A785C700C9C874 /* Configuration.swift */; };
-		DEC82DE324A785C800C9C874 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD624A785C700C9C874 /* APIHelper.swift */; };
-		DEC82DE424A785C800C9C874 /* OpenISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */; };
-		DEC82DE524A785C800C9C874 /* URLSessionImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */; };
 		DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DE624A7864500C9C874 /* BeersListScreen.swift */; };
 		DEC82DEA24A7889400C9C874 /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DE924A7889400C9C874 /* BeersViewModel.swift */; };
+		DED45A7924DDA9F800E68DBB /* PunkAPI in Frameworks */ = {isa = PBXBuildFile; productRef = DED45A7824DDA9F800E68DBB /* PunkAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +38,6 @@
 /* Begin PBXFileReference section */
 		DE1069CE24AA45EF003E1226 /* RandomAccessCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollection.swift; sourceTree = "<group>"; };
 		DE1F093024995C0D00CA1D4F /* CNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNavigationView.swift; sourceTree = "<group>"; };
-		DE662E9A24B374CC007FDAAD /* Fermentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
-		DE662E9B24B374CC007FDAAD /* MashTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MashTemp.swift; sourceTree = "<group>"; };
-		DE662E9C24B374CC007FDAAD /* BeerIngredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerIngredients.swift; sourceTree = "<group>"; };
-		DE662E9D24B374CC007FDAAD /* Malt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Malt.swift; sourceTree = "<group>"; };
-		DE662E9E24B374CC007FDAAD /* BeerMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerMethod.swift; sourceTree = "<group>"; };
-		DE662E9F24B374CC007FDAAD /* Hope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hope.swift; sourceTree = "<group>"; };
-		DE662EA024B374CC007FDAAD /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
-		DE662EA124B374CC007FDAAD /* ValueUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueUnit.swift; sourceTree = "<group>"; };
 		DE662EAA24B379DE007FDAAD /* BeerDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailScreen.swift; sourceTree = "<group>"; };
 		DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Custon-Nav-An-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9A236524992F0500DF24CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,18 +53,6 @@
 		DEA06F6624BB893A00B6A94E /* BeerIngredientsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerIngredientsScreen.swift; sourceTree = "<group>"; };
 		DEA06F6824BB894A00B6A94E /* BeerMethodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerMethodScreen.swift; sourceTree = "<group>"; };
 		DEA06F6B24BB899C00B6A94E /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
-		DEC82DCA24A785C700C9C874 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		DEC82DCB24A785C700C9C874 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
-		DEC82DCC24A785C700C9C874 /* JSONDataEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDataEncoding.swift; sourceTree = "<group>"; };
-		DEC82DD024A785C700C9C874 /* BeersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersAPI.swift; sourceTree = "<group>"; };
-		DEC82DD124A785C700C9C874 /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedDictionary.swift; sourceTree = "<group>"; };
-		DEC82DD224A785C700C9C874 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		DEC82DD324A785C700C9C874 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
-		DEC82DD424A785C700C9C874 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
-		DEC82DD524A785C700C9C874 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		DEC82DD624A785C700C9C874 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
-		DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenISO8601DateFormatter.swift; sourceTree = "<group>"; };
-		DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionImplementations.swift; sourceTree = "<group>"; };
 		DEC82DE624A7864500C9C874 /* BeersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersListScreen.swift; sourceTree = "<group>"; };
 		DEC82DE924A7889400C9C874 /* BeersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED45A7924DDA9F800E68DBB /* PunkAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,21 +92,6 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		DE662E9924B374CC007FDAAD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DE662E9A24B374CC007FDAAD /* Fermentation.swift */,
-				DE662E9B24B374CC007FDAAD /* MashTemp.swift */,
-				DE662E9C24B374CC007FDAAD /* BeerIngredients.swift */,
-				DE662E9D24B374CC007FDAAD /* Malt.swift */,
-				DE662E9E24B374CC007FDAAD /* BeerMethod.swift */,
-				DE662E9F24B374CC007FDAAD /* Hope.swift */,
-				DE662EA024B374CC007FDAAD /* Beer.swift */,
-				DE662EA124B374CC007FDAAD /* ValueUnit.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		DE9A235924992F0500DF24CC = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				DEA06F6A24BB898400B6A94E /* Utils */,
-				DEC82DC924A7859F00C9C874 /* PunkAPI */,
 				DE1F092F24995BD500CA1D4F /* Navigation */,
 				DEC82DE824A7866D00C9C874 /* Screens */,
 				DE9A236524992F0500DF24CC /* AppDelegate.swift */,
@@ -208,34 +154,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		DEC82DC924A7859F00C9C874 /* PunkAPI */ = {
-			isa = PBXGroup;
-			children = (
-				DE662E9924B374CC007FDAAD /* Models */,
-				DEC82DD624A785C700C9C874 /* APIHelper.swift */,
-				DEC82DCF24A785C700C9C874 /* APIs */,
-				DEC82DCB24A785C700C9C874 /* APIs.swift */,
-				DEC82DD324A785C700C9C874 /* CodableHelper.swift */,
-				DEC82DD524A785C700C9C874 /* Configuration.swift */,
-				DEC82DCA24A785C700C9C874 /* Extensions.swift */,
-				DEC82DCC24A785C700C9C874 /* JSONDataEncoding.swift */,
-				DEC82DD424A785C700C9C874 /* JSONEncodingHelper.swift */,
-				DEC82DD224A785C700C9C874 /* Models.swift */,
-				DEC82DD724A785C700C9C874 /* OpenISO8601DateFormatter.swift */,
-				DEC82DD124A785C700C9C874 /* SynchronizedDictionary.swift */,
-				DEC82DD824A785C700C9C874 /* URLSessionImplementations.swift */,
-			);
-			path = PunkAPI;
-			sourceTree = "<group>";
-		};
-		DEC82DCF24A785C700C9C874 /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-				DEC82DD024A785C700C9C874 /* BeersAPI.swift */,
-			);
-			path = APIs;
-			sourceTree = "<group>";
-		};
 		DEC82DE824A7866D00C9C874 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +181,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Custon-Nav-An-Api";
+			packageProductDependencies = (
+				DED45A7824DDA9F800E68DBB /* PunkAPI */,
+			);
 			productName = "SwiftUI-Custon-Nav-An-Api";
 			productReference = DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */;
 			productType = "com.apple.product-type.application";
@@ -313,6 +234,9 @@
 				Base,
 			);
 			mainGroup = DE9A235924992F0500DF24CC;
+			packageReferences = (
+				DED45A7724DDA9F800E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */,
+			);
 			productRefGroup = DE9A236324992F0500DF24CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,37 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC82DDF24A785C800C9C874 /* Models.swift in Sources */,
-				DEC82DE124A785C800C9C874 /* JSONEncodingHelper.swift in Sources */,
 				DE1069CF24AA45EF003E1226 /* RandomAccessCollection.swift in Sources */,
-				DE662EA524B374CC007FDAAD /* Malt.swift in Sources */,
-				DEC82DE224A785C800C9C874 /* Configuration.swift in Sources */,
-				DE662EA824B374CC007FDAAD /* Beer.swift in Sources */,
 				DE662EAB24B379DE007FDAAD /* BeerDetailScreen.swift in Sources */,
-				DE662EA424B374CC007FDAAD /* BeerIngredients.swift in Sources */,
-				DE662EA724B374CC007FDAAD /* Hope.swift in Sources */,
 				DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */,
-				DEC82DE324A785C800C9C874 /* APIHelper.swift in Sources */,
-				DEC82DD924A785C800C9C874 /* Extensions.swift in Sources */,
 				DE9A236624992F0500DF24CC /* AppDelegate.swift in Sources */,
-				DE662EA624B374CC007FDAAD /* BeerMethod.swift in Sources */,
-				DEC82DDD24A785C800C9C874 /* BeersAPI.swift in Sources */,
-				DE662EA224B374CC007FDAAD /* Fermentation.swift in Sources */,
-				DEC82DE424A785C800C9C874 /* OpenISO8601DateFormatter.swift in Sources */,
-				DEC82DE024A785C800C9C874 /* CodableHelper.swift in Sources */,
-				DEC82DE524A785C800C9C874 /* URLSessionImplementations.swift in Sources */,
 				DEA06F6724BB893A00B6A94E /* BeerIngredientsScreen.swift in Sources */,
 				DE9A236824992F0500DF24CC /* SceneDelegate.swift in Sources */,
-				DEC82DDE24A785C800C9C874 /* SynchronizedDictionary.swift in Sources */,
 				DE1F093124995C0D00CA1D4F /* CNavigationView.swift in Sources */,
-				DEC82DDA24A785C800C9C874 /* APIs.swift in Sources */,
 				DEA06F6924BB894A00B6A94E /* BeerMethodScreen.swift in Sources */,
-				DEC82DDB24A785C800C9C874 /* JSONDataEncoding.swift in Sources */,
 				DEC82DEA24A7889400C9C874 /* BeersViewModel.swift in Sources */,
 				DE9A236A24992F0500DF24CC /* ContentView.swift in Sources */,
-				DE662EA324B374CC007FDAAD /* MashTemp.swift in Sources */,
 				DEA06F6C24BB899C00B6A94E /* DataUtils.swift in Sources */,
-				DE662EA924B374CC007FDAAD /* ValueUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +545,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DED45A7724DDA9F800E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/evghenilisita/Documents/Projects/iOS/OTUS/swift-punk-api";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DED45A7824DDA9F800E68DBB /* PunkAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DED45A7724DDA9F800E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */;
+			productName = PunkAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE9A235A24992F0500DF24CC /* Project object */;
 }
