@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "PunkAPI",
-        "repositoryURL": "/Users/evghenilisita/Documents/Projects/iOS/OTUS/swift-punk-api",
+        "repositoryURL": "git@github.com:LisitaEugen/swift-punk-api.git",
         "state": {
           "branch": null,
           "revision": "2c642a449cb3a05c33aa56fa98f872e2fbf71d1c",

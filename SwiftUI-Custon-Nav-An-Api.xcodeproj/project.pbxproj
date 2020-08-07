@@ -22,7 +22,7 @@
 		DEA06F6C24BB899C00B6A94E /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA06F6B24BB899C00B6A94E /* DataUtils.swift */; };
 		DEC82DE724A7864500C9C874 /* BeersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DE624A7864500C9C874 /* BeersListScreen.swift */; };
 		DEC82DEA24A7889400C9C874 /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC82DE924A7889400C9C874 /* BeersViewModel.swift */; };
-		DED45A7924DDA9F800E68DBB /* PunkAPI in Frameworks */ = {isa = PBXBuildFile; productRef = DED45A7824DDA9F800E68DBB /* PunkAPI */; };
+		DED45A7C24DDAE0000E68DBB /* PunkAPI in Frameworks */ = {isa = PBXBuildFile; productRef = DED45A7B24DDAE0000E68DBB /* PunkAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DED45A7924DDA9F800E68DBB /* PunkAPI in Frameworks */,
+				DED45A7C24DDAE0000E68DBB /* PunkAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +182,7 @@
 			);
 			name = "SwiftUI-Custon-Nav-An-Api";
 			packageProductDependencies = (
-				DED45A7824DDA9F800E68DBB /* PunkAPI */,
+				DED45A7B24DDAE0000E68DBB /* PunkAPI */,
 			);
 			productName = "SwiftUI-Custon-Nav-An-Api";
 			productReference = DE9A236224992F0500DF24CC /* SwiftUI-Custon-Nav-An-Api.app */;
@@ -235,7 +235,7 @@
 			);
 			mainGroup = DE9A235924992F0500DF24CC;
 			packageReferences = (
-				DED45A7724DDA9F800E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */,
+				DED45A7A24DDAE0000E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */,
 			);
 			productRefGroup = DE9A236324992F0500DF24CC /* Products */;
 			projectDirPath = "";
@@ -547,9 +547,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DED45A7724DDA9F800E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */ = {
+		DED45A7A24DDAE0000E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/evghenilisita/Documents/Projects/iOS/OTUS/swift-punk-api";
+			repositoryURL = "git@github.com:LisitaEugen/swift-punk-api.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.2;
@@ -558,9 +558,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DED45A7824DDA9F800E68DBB /* PunkAPI */ = {
+		DED45A7B24DDAE0000E68DBB /* PunkAPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DED45A7724DDA9F800E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */;
+			package = DED45A7A24DDAE0000E68DBB /* XCRemoteSwiftPackageReference "swift-punk-api" */;
 			productName = PunkAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
